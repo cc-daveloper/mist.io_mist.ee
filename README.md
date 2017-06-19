@@ -51,12 +51,7 @@ This will start all the mist.io docker containers in the background.
 
 To create a user for the first time, first run
 
-    docker-compose exec api sh
-
-This should drop you in a shell into one of the mist.io containers. In there,
-run
-
-    ./bin/adduser --admin --docker-cloud admin@example.com
+    docker-compose exec api ./bin/adduser --admin --docker-cloud admin@example.com
 
 Replace the email address with yours. Try running `./bin/adduser -h` for more
 options. The `--docker-cloud` flag will add the docker daemon hosting the
@@ -65,7 +60,7 @@ mist.io installation as a docker cloud in the created account.
 You may also subscribe to a larger Plan in order to extend the limit of your
 monitored machines. In the same shell, run:
 
-    ./bin/addplan my-org
+    docker-compose exec api ./bin/addplan my-org
 
 Specify the name of your Organization, as created above. For more options, run
 `./bin/addplan -h`.
