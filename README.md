@@ -147,7 +147,7 @@ everything went fine.
     
     docker-compose start
     
-### or even better
+or even better
 
     docker-compose up -d
 
