@@ -86,6 +86,19 @@ Additionally, you may provide your own mailer settings. The default mailing
 service is provided by the `mailmock` container. Have a look by tailing its
 logs with `docker-compose logs -f mailmock`.
 
+To change your mailer settings, locate the `MAILER_SETTINGS` var in ./config/settings.py and populate
+accordingly:
+```
+MAILER_SETTINGS = { 
+    'mail.host': "smtp.yourhost.net",
+    'mail.port': "25",
+    'mail.tls': False,
+    'mail.starttls': True,
+    'mail.username': "username",
+    'mail.password': "password"
+}  
+```
+
 Finally, restart the services (with `docker-compose restart`, for instance).
 
 
