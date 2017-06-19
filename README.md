@@ -120,33 +120,41 @@ To make it permanent add it to /etc/sysctl.conf:
 ## Managing mist.io
 
 Mist.io is managed using `docker-compose`. Look that up for details. Some
-useful commands:
+useful commands.
 
-    # See status of all applications
+### See status of all applications
+
     docker-compose ps
 
-    # Almost all containers should be in the UP state. An exception to this
-    # is shortlived containers. Currently the only such container is
-    # elasticsearch-manage. This should run for a few seconds and exit 0 if
-    # everything went fine.
+Almost all containers should be in the UP state. An exception to this
+is shortlived containers. Currently the only such container is
+elasticsearch-manage. This should run for a few seconds and exit 0 if
+everything went fine.
 
-    # Restart nginx container
+### Restart nginx container
+
     docker-compose restart nginx
 
-    # See the logs of the api and celery containers, starting with the last
-    # 50 lines.
+### See the logs of the api and celery containers, starting with the last 50 lines.
+
     docker-compose logs --tail=50 -f api celery
 
-    # Stop mist.io
+### Stop mist.io
+
     docker-compose stop
 
-    # Start mist.io
+### Start mist.io
+    
     docker-compose start
-    # or even better
+    
+### or even better
+
     docker-compose up -d
 
-    # Stop and remove all containers
+### Stop and remove all containers
+    
     docker-compose down
 
-    # Completely remove all containers and data volumes.
+### Completely remove all containers and data volumes.
+    
     docker-compose down -v
