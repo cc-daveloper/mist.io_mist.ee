@@ -69,6 +69,8 @@ Visit http://localhost and login with the email and password specified above.
 
 Welcome to mist.io! Enjoy!
 
+You can now visit http://docs.mist.io for the full mist.io Documentation.
+
 
 ## Configuring mist.io
 
