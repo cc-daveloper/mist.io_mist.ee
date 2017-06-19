@@ -89,7 +89,7 @@ inside docker-compose's internal network.
 
 Additionally, you may provide your own mailer settings. The default mailing
 service is provided by the `mailmock` container. Have a look by tailing its
-logs.
+logs with `docker-compose logs -f mailmock`.
 
 Finally, restart the services (with `docker-compose restart`, for instance).
 
