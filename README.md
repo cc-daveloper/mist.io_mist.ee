@@ -13,9 +13,14 @@ The enterprise version is also available as a service at https://mist.io.
 
 Recommended hardware resources are:
     4 CPU cores
-    8 GB RAM
+    10 GB RAM
     10 GB disk (accessible to /var/lib/docker/)
 
+## Network requirements
+
+The server will require outgoing traffic on ports 80 and 443 towards the API endpoints of the public clouds that will be added. The server should also have outgoing SSH access (usually through port 22) on the managed machines.
+
+Incoming TCP traffic should be allowed on ports 22, 80, 443 and 6545. It should also allow incoming UDP traffic on port 25826. All these ports, besides 22, are used from resource managed by Mist.io to communicate with the installation.
 
 ## Installation
 
