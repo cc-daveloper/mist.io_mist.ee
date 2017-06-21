@@ -6,7 +6,7 @@ across clouds and platforms.
 The enterprise version of mist.io also includes Role Based Access, VPN tunnels,
 and Insights for cost optimization.
 
-The enterprise version is also available as a service at https://mist.io.
+The enterprise version is also available as a service at https://mist.io
 
 
 ## Hardware requirements
